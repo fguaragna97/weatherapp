@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
 
       // Api call OpenWeathermap
       fetch(
-        `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=09907f7848d7e14ba1a36ebd01699e57&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=09907f7848d7e14ba1a36ebd01699e57&units=metric`
       )
         .then((response) => response.json())
         .then((data) => {
