@@ -8,16 +8,23 @@
     <title>WeatherApp</title>
   </head>
   <body>
-    <div class="location">
-      <h1 id="city" class="location-city">city</h1>
-      <p id="icon">Icon</p>
+    <div id="loading" class="loading">
+      <img
+        src="https://d2mkdgs306yypx.cloudfront.net/-/media/SkyWorks/Ajax-Loader/Ajaxloader.gif?h=200&w=200&hash=6C19769D4109DA3E2CD4B3F17D90AFFA"
+      />
     </div>
-    <div class="temperature">
-      <div class="degree-section">
-        <h2 id="temp" class="temperature-degree">temperature</h2>
-        <span>C</span>
+    <div id="wrapper" class="wrapper">
+      <div class="location">
+        <h1 id="city" class="location-city">city</h1>
+        <p id="icon">Icon</p>
       </div>
-      <div id="description" class="temperature-description">Its cold</div>
+      <div class="temperature">
+        <div class="degree-section">
+          <h2 id="temp" class="temperature-degree">temperature</h2>
+          <span>C</span>
+        </div>
+        <div id="description" class="temperature-description">Its cold</div>
+      </div>
     </div>
   </body>
   <script src="index.js"></script>
