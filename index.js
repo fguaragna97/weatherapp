@@ -16,6 +16,11 @@ window.addEventListener("load", () => {
       )
         .then((response) => response.json())
         .then((data) => {
+          // show wrapper and hide loading
+          const wrapper = document.getElementById("wrapper");
+          wrapper.style.display = "block";
+          const loading = document.getElementById("loading");
+          loading.style.display = "none";
           // get elements and replace the value with the api value
           const temp = document.getElementById("temp");
           temp.textContent = Math.floor(data.main.temp);

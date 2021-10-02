@@ -14,11 +14,17 @@ body {
   font-family: sans-serif;
   color: white;
 }
+.wrapper {
+  display: none;
+}
+.loading {
+  display: block;
+}
 
 .location,
 .temperature {
   height: 30vh;
-  width: 30%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
